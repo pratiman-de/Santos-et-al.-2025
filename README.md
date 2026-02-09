@@ -9,3 +9,6 @@ Additional data analysis of the ribosome profiling datasets (i.e: Single gene an
 -3_Get_binding_periods.py Extract binding periods using the heuristic rule described in the method section of the article
 
 -00_Sequence_human_proteins.pick and 00_Localization_human_proteins.pick are support dictionaries containing human protein sequences and protein localization annotation.
+
+
+DOI:10.5281/zenodo.18552680
