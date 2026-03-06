@@ -25,8 +25,8 @@ for experiment, out_name in zip(input_files, output_file_names):
 	normalization = sum_ip/sum_total
 	common_keys= []
 	for key in total.keys():
-                if key in ip.keys():
-                        common_keys.append(key)
+		if key in ip.keys():
+			common_keys.append(key)
 	for p, gene in enumerate(common_keys):
 
 		total_gene = total[gene]
@@ -108,3 +108,4 @@ for experiment, out_name in zip(input_files, output_file_names):
 
 	with open(path + "2_loCI_calc/" + str(out_name) + '.pick', 'wb') as handle:
 		pickle.dump(master, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
