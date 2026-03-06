@@ -85,10 +85,10 @@ for file_name in ['Selectome_rep1.h5', 'TotalTranslatome_rep1.h5']:
 		if i in out1.keys():
 			continue
 		else:
-                        if len(j) != 0:
-                                out0[i] = np.zeros(len(j))
-                                out1[i] = np.zeros(len(j))
-                                out2[i] = [0, 0, 0, len(j)]
+			if len(j) != 0:
+					out0[i] = np.zeros(len(j))
+					out1[i] = np.zeros(len(j))
+					out2[i] = [0, 0, 0, len(j)]
 
 	for X, n in zip([out0, out1, out2, out3], ['_raw_codon_P15', '_rpm_codon_P15', '_rpkm', '_stats']):
 	#for X, n in zip([out0, out1], ['_raw_codon_A12', '_rpm_codon_A12']):
@@ -96,3 +96,4 @@ for file_name in ['Selectome_rep1.h5', 'TotalTranslatome_rep1.h5']:
 			pickle.dump(X, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 	print(file_name, 'done')
+
